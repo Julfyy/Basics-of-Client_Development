@@ -16,7 +16,7 @@ div {
     background-color: #ffffff;
     border: 1px black solid;
     text-align: right;
-    width: 150px;
+    width: 200px;
     padding: 5px 0;
 }
 
@@ -65,13 +65,17 @@ footer h1 {
 
 .col-2 {
     background-color: chartreuse;
-    padding: 200px 0;
+    height: 50%;
+    display: flex;
+    align-items: center;
     width: 45%;
 }
 
 .col-3 {
     background-color: yellow;
-    padding: 200px 0;
+    height: 50%;
+    display: flex;
+    align-items: center;
     width: 45%;
 }
 
@@ -80,17 +84,24 @@ footer h1 {
     width: 100%;
     text-align: left;
     float: left;
-    padding: 50px 0;
+    height: 20%;
+    display: flex;
+    align-items: center;
 }
 
 .col-4 {
     background-color: greenyellow;
-    padding: 270px 0;
+    height: 70%;
+    display: flex;
+    align-items: center;
     width: 40%;
 }
 
 .col-5 {
     background-color: orange;
-    padding: 270px 0;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40%;
 }
