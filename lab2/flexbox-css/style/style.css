@@ -1,13 +1,38 @@
-* {
-    box-sizing: border-box;
+section {
+    display: flex;
+    height: 700px;
 }
 
-.header-footer {
-    width: 100%;
+header,
+footer {
+    display: flex;
     background-color: aqua;
     border: black 1px solid;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
 }
 
+article {
+    flex: 2;
+}
+
+header div {
+    background-color: #ffffff;
+    border: 1px black solid;
+    text-align: right;
+    padding: 0px 5px;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+h1 {
+    margin: 0 10px;
+}
+
+
+/*
 div {
     border: black 1px solid;
 }
@@ -44,7 +69,6 @@ footer h1 {
 
 .column {
     width: 50%;
-    /* height: 700px; */
     float: left;
     border: 0px;
 }
@@ -104,4 +128,5 @@ footer h1 {
     align-items: center;
     justify-content: center;
     width: 40%;
-}
+} 
+*/
