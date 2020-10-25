@@ -1,0 +1,116 @@
+    body {
+        display: grid;
+        grid-template-areas: "header header" "left right" "footer footer";
+        grid-template-rows: 20% 1fr 20%;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    
+    header,
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: aqua;
+        border: black 1px solid;
+        align-items: center;
+    }
+    
+    header div,
+    footer div {
+        display: grid;
+        background-color: #ffffff;
+        border: 1px black solid;
+        text-align: right;
+        width: 50%;
+        height: 30%;
+        padding: 0 5px;
+        margin: 0 10px;
+        align-content: center;
+    }
+    
+    footer h1,
+    header div {
+        grid-column-start: 4;
+        justify-self: right;
+    }
+    
+    h1 {
+        margin: 0 10px;
+        font-size: 2em;
+    }
+    
+    #left {
+        grid-area: left;
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        grid-template-rows: 80% 20%;
+    }
+    
+    #col-2,
+    #col-3,
+    #col-4,
+    #col-5 {
+        display: grid;
+        border: black 1px solid;
+        align-content: center;
+        justify-content: end;
+    }
+    
+    #col-2 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        background-color: chartreuse;
+    }
+    
+    #col-3 {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        background-color: yellow;
+    }
+    
+    #col-6 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        border: black 1px solid;
+        background-color: orange;
+        text-align: left;
+        align-content: center;
+    }
+    
+    #right {
+        grid-area: right;
+        display: grid;
+        grid-template-columns: 10% 40% 10% 40%;
+        grid-template-rows: 1fr;
+    }
+    
+    #col-4,
+    #col-5 {
+        border: black 1px solid;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    #col-4 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        background-color: greenyellow;
+    }
+    
+    #col-5 {
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        background-color: orange;
+    }
