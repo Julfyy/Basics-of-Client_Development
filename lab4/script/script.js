@@ -34,13 +34,13 @@ function task1() {
 
     window.addEventListener('scroll', function() {
         setTimeout(function() {
-            if (block1.style.fontStyle == 'italic') {
-                block1.style.fontStyle = '';
-                block6.style.fontStyle = '';
-            } else {
-                block1.style.fontStyle = 'italic';
-                block6.style.fontStyle = 'italic';
-            }
+            // if (block1.style.fontStyle == 'italic') {
+            //     block1.style.fontStyle = '';
+            //     block6.style.fontStyle = '';
+            // } else {
+            block1.style.fontStyle = 'italic';
+            block6.style.fontStyle = 'italic';
+            // }
         }, 5000);
 
 
